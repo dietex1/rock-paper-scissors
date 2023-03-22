@@ -1,0 +1,104 @@
+html {
+  background: rgba(228, 241, 255, 0.55);
+}
+
+body {
+  text-align: center;
+}
+
+.rock::before {
+  content: "✊";
+}
+
+.paper::before {
+  content: "🖐️";
+}
+
+.scissors::before {
+  content: "✌️";
+}
+
+.main_div {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 0.8fr;
+  place-items: center;
+  gap: 8px;
+}
+
+.big_emoji {
+  font-size: 3rem;
+}
+
+.buttons {
+  grid-template-rows: 1fr 1fr auto;
+  display: flex;
+  justify-content: center;
+}
+
+.btns {
+  background-color: white;
+  border: 1px solid rgb(253, 253, 253);
+  border-radius: 0.7rem;
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  margin: 10px;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+}
+
+.btns:hover {
+  transform: scale(1.4, 1.4);
+  box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.45);
+}
+
+.btns:active {
+  transform: scale(1.4, 1.4);
+}
+
+.human {
+  grid-column: 1 / 2;
+}
+
+.score {
+  grid-column: 2 / 3;
+  font-size: 2.5rem;
+}
+
+.machine {
+  grid-column: 3 / 4;
+}
+
+.mid-emoji {
+  font-size: 1.5rem;
+}
+
+.winner {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.restart {
+  background-color: #4caf50;
+  border: 1px solid green;
+  border-radius: 0.3rem;
+  color: white;
+  padding: 0.5em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.restart:hover {
+  transform: scale(1.4, 1.4);
+  box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.45);
+}
+
+.emojiWinner {
+  font-size: 3rem;
+}
